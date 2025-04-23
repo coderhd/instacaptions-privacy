@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="InstaCaptions Privacy and Policy Information">
     <meta name="theme-color" content="#4285f4">
 
@@ -29,8 +29,8 @@
 
 <body>
     <div class="overlay" id="overlay"></div>
-    <button class="menu-toggle" id="menuToggle">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="3" y1="12" x2="21" y2="12"></line>
             <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -38,7 +38,7 @@
         </svg>
     </button>
 
-    <div class="container">
+    <div class="container" id="mainContainer">
         <aside class="sidebar" id="sidebar">
             <div class="logo">
                 <img src="assets/android-chrome-192x192.png" alt="Insta Caption Logo">
@@ -52,6 +52,10 @@
         </aside>
 
         <main class="content">
+            <div class="mobile-logo">
+                <img src="assets/android-chrome-192x192.png" alt="Insta Caption Logo">
+                <h1>Insta Caption</h1>
+            </div>
             <div id="privacyContent" class="policy-content active"></div>
             <div id="csamContent" class="policy-content"></div>
             <div id="csaeContent" class="policy-content"></div>
